@@ -13,10 +13,9 @@ import org.speer.core.entities.Note;
 import org.speer.core.entities.User;
 import org.speer.core.models.GenericResponse;
 import org.speer.core.service.NoteService;
+import org.speer.core.service.NoteServiceImpl;
 
 import java.util.List;
-import java.util.Optional;
-import java.util.Set;
 
 @Path("api/notes")
 @Slf4j
@@ -40,7 +39,7 @@ public class NoteResource {
         return GenericResponse
                 .<List<Note>>builder()
                 .success(true)
-                .data(user.getCreatedNotes())
+                .data(user.getNotes())
                 .build();
     }
 
@@ -50,7 +49,7 @@ public class NoteResource {
     @ResponseMetered
     @Path("/{noteId}")
     @UnitOfWork
-    public GenericResponse<Note> getNote(@PathParam("id") Long id, @Auth User user){
+    public GenericResponse<Note> getNote(@PathParam("noteId") Long id, @Auth User user){
         try {
             Note note = noteService.getNote(user, id);
             if(note == null){
@@ -119,15 +118,31 @@ public class NoteResource {
     @Timed
     @ExceptionMetered
     @ResponseMetered
-    @Path("/{noteId}/share")
+    @Path("/{noteId}/{username}/share")
     @UnitOfWork
-    public GenericResponse deleteNote(List<String> users, @PathParam("noteId") Long noteId, @Auth User user){
-        noteService.deleteNote(user, noteId);
+    public GenericResponse shareNote(@PathParam("username") String username, @PathParam("noteId") Long noteId, @Auth User user){
+        noteService.shareNote(username, noteId, user);
         return GenericResponse
                 .builder()
                 .success(true)
                 .build();
     }
+
+    @GET
+    @Timed
+    @ExceptionMetered
+    @ResponseMetered
+    @UnitOfWork
+    @Path("/search")
+    public GenericResponse<List<Note> > getNotes(@QueryParam("query") String query ,@Auth User user){
+        return GenericResponse
+                .<List<Note>>builder()
+                .success(true)
+                .data(noteService.searchNotes(user, query))
+                .build();
+    }
+
+
 
 
 

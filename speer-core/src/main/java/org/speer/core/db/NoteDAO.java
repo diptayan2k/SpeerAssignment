@@ -6,6 +6,8 @@ import jakarta.inject.Inject;
 import org.hibernate.SessionFactory;
 import org.speer.core.entities.Note;
 
+import java.util.ArrayList;
+
 public class NoteDAO extends AbstractDAO<Note> {
 
     @Inject

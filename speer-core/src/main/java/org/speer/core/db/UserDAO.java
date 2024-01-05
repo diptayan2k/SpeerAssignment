@@ -29,8 +29,7 @@ public class UserDAO extends AbstractDAO<User> {
     }
 
     public User create(User user) {
-        user.setCreatedNotes(new ArrayList<>());
-        user.setSharedNotes(new ArrayList<>());
+        user.setNotes(new ArrayList<>());
         return persist(user);
     }
 
@@ -41,7 +40,7 @@ public class UserDAO extends AbstractDAO<User> {
     public List<Note> getAllNotesForUser(String username) {
         User user = findByUsername(username);
         if (user != null) {
-            return user.getCreatedNotes();
+            return user.getNotes();
         }
         throw new RuntimeException("Invalid User!!");
     }

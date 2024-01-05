@@ -32,14 +32,16 @@ public class User implements Principal {
     @Column(name = "password", nullable = false)
     private String password;
 
-    @OneToMany(mappedBy = "createdBy", fetch = FetchType.EAGER)
-    private List<Note> createdNotes;
-
-    @ManyToMany(mappedBy = "sharedUsers")
-    private List<Note> sharedNotes;
+    @ManyToMany(fetch = FetchType.EAGER, cascade = CascadeType.PERSIST)
+    @JoinTable(
+            name = "user_notes",
+            joinColumns = @JoinColumn(name = "user_id"),
+            inverseJoinColumns = @JoinColumn(name = "note_id")
+    )
+    private List<Note> notes;
 
     public void addNote(Note note){
-        createdNotes.add(note);
+        notes.add(note);
     }
 
 }

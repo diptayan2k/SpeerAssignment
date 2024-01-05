@@ -30,17 +30,4 @@ public class Note {
     @Column(name = "content", nullable = false, columnDefinition = "LONGTEXT")
     private String content;
 
-    @ManyToOne
-    @JoinColumn(name = "created_by")
-    @JsonIgnore
-    private User createdBy;
-
-    @ManyToMany
-    @JsonIgnore
-    @JoinTable(
-            name = "shared_notes",
-            joinColumns = @JoinColumn(name = "note_id"),
-            inverseJoinColumns = @JoinColumn(name = "user_id")
-    )
-    private Set<User> sharedUsers;
 }
