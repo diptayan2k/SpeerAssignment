@@ -1,5 +1,5 @@
 
-How to start the true application
+How to start the application
 ---
 
 1. This Application is built using java (Dropwizard framwork).
