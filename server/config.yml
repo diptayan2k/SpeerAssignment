@@ -9,7 +9,7 @@ secretKey : WIhFv/WcCq//zsbaQ+bs8/a2teWJ0JjPiKiDrzqIoGZH/2HTGpzKTTzal+dYRSlJYNMR
 dataSourceFactory:
   driverClass: com.mysql.cj.jdbc.Driver
   user: root
-  password: DEep@2000
+  password: 2133434
   url: jdbc:mysql://127.0.0.1:3306/SpeerDatabase
   properties:
     charSet: UTF-8  # Optional: Set the character set if needed
