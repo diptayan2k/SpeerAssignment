@@ -15,3 +15,5 @@ dataSourceFactory:
     charSet: UTF-8  # Optional: Set the character set if needed
     hibernate.dialect: org.hibernate.dialect.MySQLDialect
     hibernate.hbm2ddl.auto: update
+
+permitsPerSecond : 1.0

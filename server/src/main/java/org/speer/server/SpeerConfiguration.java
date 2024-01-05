@@ -18,5 +18,11 @@ public class SpeerConfiguration extends Configuration implements SpeerCoreConfig
 
     @Valid
     @NotNull
-    String secretKey;
+    public String secretKey;
+
+    @Valid
+    @NotNull
+    public Float permitsPerSecond;
+
+
 }

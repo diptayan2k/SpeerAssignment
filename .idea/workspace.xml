@@ -5,13 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b65e17e3-e056-4a1b-9b61-ed129114cba1" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/speer-core/src/main/java/org/speer/core/util/RateLimiter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/speer-core/src/main/java/org/speer/core/db/NoteDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/speer-core/src/main/java/org/speer/core/db/NoteDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/speer-core/src/main/java/org/speer/core/db/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/speer-core/src/main/java/org/speer/core/db/UserDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/speer-core/src/main/java/org/speer/core/entities/Note.java" beforeDir="false" afterPath="$PROJECT_DIR$/speer-core/src/main/java/org/speer/core/entities/Note.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/speer-core/src/main/java/org/speer/core/entities/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/speer-core/src/main/java/org/speer/core/entities/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/server/config.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/org/speer/server/SpeerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/org/speer/server/SpeerApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/org/speer/server/SpeerConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/org/speer/server/SpeerConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/speer-core/src/main/java/org/speer/core/SpeerCoreConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/speer-core/src/main/java/org/speer/core/SpeerCoreConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/speer-core/src/main/java/org/speer/core/SpeerCoreModule.java" beforeDir="false" afterPath="$PROJECT_DIR$/speer-core/src/main/java/org/speer/core/SpeerCoreModule.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/speer-core/src/main/java/org/speer/core/models/GenericResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/speer-core/src/main/java/org/speer/core/models/GenericResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/speer-core/src/main/java/org/speer/core/resources/AuthResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/speer-core/src/main/java/org/speer/core/resources/AuthResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/speer-core/src/main/java/org/speer/core/resources/DummyResource.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/speer-core/src/main/java/org/speer/core/resources/NoteResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/speer-core/src/main/java/org/speer/core/resources/NoteResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/speer-core/src/main/java/org/speer/core/service/NoteService.java" beforeDir="false" afterPath="$PROJECT_DIR$/speer-core/src/main/java/org/speer/core/service/NoteService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,8 +26,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Enum" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>

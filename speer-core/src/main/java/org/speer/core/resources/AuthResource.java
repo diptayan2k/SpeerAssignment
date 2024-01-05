@@ -27,16 +27,14 @@ import java.util.Optional;
 public class AuthResource {
 
     private final UserDAO userDAO;
-    private final TokenAuthenticator tokenAuthenticator;
     private final UserAuthenticator userAuthenticator;
     private final SpeerTokenManager tokenGenerator;
+
     @Inject
     public AuthResource(UserDAO userDAO,
-                        TokenAuthenticator tokenAuthenticator,
                         SpeerTokenManager tokenGenerator,
                         UserAuthenticator userAuthenticator) {
         this.userDAO = userDAO;
-        this.tokenAuthenticator = tokenAuthenticator;
         this.tokenGenerator = tokenGenerator;
         this.userAuthenticator = userAuthenticator;
     }

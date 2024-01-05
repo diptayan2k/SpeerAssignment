@@ -13,7 +13,7 @@ import org.speer.core.entities.Note;
 import org.speer.core.entities.User;
 import org.speer.core.models.GenericResponse;
 import org.speer.core.service.NoteService;
-import org.speer.core.service.NoteServiceImpl;
+import org.speer.core.util.RateLimiter;
 
 import java.util.List;
 
@@ -36,11 +36,20 @@ public class NoteResource {
     @ResponseMetered
     @UnitOfWork
     public GenericResponse<List<Note>> getNotes(@Auth User user){
-        return GenericResponse
-                .<List<Note>>builder()
-                .success(true)
-                .data(user.getNotes())
-                .build();
+        try {
+            RateLimiter.handleRateLimiting(user.getUsername());
+            return GenericResponse
+                    .<List<Note>>builder()
+                    .success(true)
+                    .data(user.getNotes())
+                    .build();
+        } catch (Exception e){
+            return GenericResponse
+                    .<List<Note>>builder()
+                    .message(e.getMessage())
+                    .success(false)
+                    .build();
+        }
     }
 
     @GET
@@ -51,6 +60,7 @@ public class NoteResource {
     @UnitOfWork
     public GenericResponse<Note> getNote(@PathParam("noteId") Long id, @Auth User user){
         try {
+            RateLimiter.handleRateLimiting(user.getUsername());
             Note note = noteService.getNote(user, id);
             if(note == null){
                 return GenericResponse
@@ -80,11 +90,21 @@ public class NoteResource {
     @ResponseMetered
     @UnitOfWork
     public GenericResponse createNote(Note note, @Auth User user){
-        noteService.createNote(user, note);
-        return GenericResponse
-                .builder()
-                .success(true)
-                .build();
+        try {
+            RateLimiter.handleRateLimiting(user.getUsername());
+            noteService.createNote(user, note);
+            return GenericResponse
+                    .builder()
+                    .success(true)
+                    .build();
+
+        } catch (Exception e){
+            return GenericResponse
+                    .<List<Note>>builder()
+                    .message(e.getMessage())
+                    .success(false)
+                    .build();
+        }
     }
 
     @PUT
@@ -93,11 +113,20 @@ public class NoteResource {
     @ResponseMetered
     @UnitOfWork
     public GenericResponse updateNote(Note note, @Auth User user){
-        noteService.updateNote(user, note);
-        return GenericResponse
-                .builder()
-                .success(true)
-                .build();
+        try {
+            RateLimiter.handleRateLimiting(user.getUsername());
+            noteService.updateNote(user, note);
+            return GenericResponse
+                    .builder()
+                    .success(true)
+                    .build();
+        }catch (Exception e){
+            return GenericResponse
+                    .<List<Note>>builder()
+                    .message(e.getMessage())
+                    .success(false)
+                    .build();
+        }
     }
 
     @DELETE
@@ -107,11 +136,20 @@ public class NoteResource {
     @Path("/{noteId}")
     @UnitOfWork
     public GenericResponse deleteNote(@PathParam("noteId") Long noteId, @Auth User user){
-        noteService.deleteNote(user, noteId);
-        return GenericResponse
-                .builder()
-                .success(true)
-                .build();
+        try {
+            RateLimiter.handleRateLimiting(user.getUsername());
+            noteService.deleteNote(user, noteId);
+            return GenericResponse
+                    .builder()
+                    .success(true)
+                    .build();
+        } catch (Exception e){
+            return GenericResponse
+                    .<List<Note>>builder()
+                    .message(e.getMessage())
+                    .success(false)
+                    .build();
+        }
     }
 
     @POST
@@ -121,11 +159,20 @@ public class NoteResource {
     @Path("/{noteId}/{username}/share")
     @UnitOfWork
     public GenericResponse shareNote(@PathParam("username") String username, @PathParam("noteId") Long noteId, @Auth User user){
-        noteService.shareNote(username, noteId, user);
-        return GenericResponse
-                .builder()
-                .success(true)
-                .build();
+        try {
+            RateLimiter.handleRateLimiting(user.getUsername());
+            noteService.shareNote(username, noteId, user);
+            return GenericResponse
+                    .builder()
+                    .success(true)
+                    .build();
+        } catch (Exception e){
+            return GenericResponse
+                    .<List<Note>>builder()
+                    .message(e.getMessage())
+                    .success(false)
+                    .build();
+        }
     }
 
     @GET
@@ -135,11 +182,20 @@ public class NoteResource {
     @UnitOfWork
     @Path("/search")
     public GenericResponse<List<Note> > getNotes(@QueryParam("query") String query ,@Auth User user){
-        return GenericResponse
-                .<List<Note>>builder()
-                .success(true)
-                .data(noteService.searchNotes(user, query))
-                .build();
+        try {
+            RateLimiter.handleRateLimiting(user.getUsername());
+            return GenericResponse
+                    .<List<Note>>builder()
+                    .success(true)
+                    .data(noteService.searchNotes(user, query))
+                    .build();
+        } catch (Exception e){
+            return GenericResponse
+                    .<List<Note>>builder()
+                    .message(e.getMessage())
+                    .success(false)
+                    .build();
+        }
     }
 
 

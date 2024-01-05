@@ -15,6 +15,8 @@ import org.hibernate.SessionFactory;
 import org.speer.core.auth.SpeerTokenManager;
 import org.speer.core.auth.TokenAuthenticator;
 import org.speer.core.db.UserDAO;
+import org.speer.core.service.NoteService;
+import org.speer.core.service.NoteServiceImpl;
 import ru.vyarus.dropwizard.guice.injector.lookup.InjectorLookup;
 
 import java.util.List;
@@ -29,7 +31,7 @@ public class SpeerCoreModule<T extends Configuration & SpeerCoreConfig> extends 
 
     @Override
     protected void configure(){
-
+        bind(NoteService.class).to(NoteServiceImpl.class);
     }
 
     @Provides
@@ -51,5 +53,6 @@ public class SpeerCoreModule<T extends Configuration & SpeerCoreConfig> extends 
         return new UnitOfWorkAwareProxyFactory(hibernateBundle).create(TokenAuthenticator.class,
                 new Class[]{UserDAO.class, SpeerTokenManager.class}, new Object[]{userDAO, speerTokenManager});
     }
+
 
 }

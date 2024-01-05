@@ -3,7 +3,6 @@ package org.speer.server;
 import com.google.inject.Injector;
 import io.dropwizard.auth.AuthDynamicFeature;
 import io.dropwizard.auth.AuthValueFactoryProvider;
-import io.dropwizard.auth.Authenticator;
 import io.dropwizard.auth.PermitAllAuthorizer;
 import io.dropwizard.auth.basic.BasicCredentialAuthFilter;
 import io.dropwizard.auth.chained.ChainedAuthFilter;
@@ -13,19 +12,17 @@ import io.dropwizard.core.setup.Bootstrap;
 import io.dropwizard.core.setup.Environment;
 import io.dropwizard.db.PooledDataSourceFactory;
 import io.dropwizard.hibernate.HibernateBundle;
-import jakarta.ws.rs.container.ContainerRequestFilter;
 import lombok.extern.slf4j.Slf4j;
 import org.glassfish.jersey.server.filter.RolesAllowedDynamicFeature;
 import org.speer.core.SpeerCoreConfig;
 import org.speer.core.SpeerCoreModule;
 import org.speer.core.auth.TokenAuthenticator;
 import org.speer.core.auth.UserAuthenticator;
-import org.speer.core.db.UserDAO;
 import org.speer.core.entities.Note;
 import org.speer.core.entities.User;
-import org.speer.core.resources.DummyResource;
 import org.speer.core.resources.AuthResource;
 import org.speer.core.resources.NoteResource;
+import org.speer.core.util.RateLimiter;
 import ru.vyarus.dropwizard.guice.GuiceBundle;
 import ru.vyarus.dropwizard.guice.injector.lookup.InjectorLookup;
 
@@ -68,11 +65,11 @@ public class SpeerApplication extends Application<SpeerConfiguration> {
     @Override
     public void run(final SpeerConfiguration configuration,
                     final Environment environment) {
+        RateLimiter.init(configuration.getPermitsPerSecond());
         //createTableIfNotExists(userDAO, environment);
         // Register your resources with the Jersey environment
         Injector injector = InjectorLookup.getInjector(this).get();
         environment.jersey().register(injector.getInstance(AuthResource.class));
-        environment.jersey().register(injector.getInstance(DummyResource.class));
         environment.jersey().register(injector.getInstance(NoteResource.class));
         // registering the auth feature
 // registering the auth feature
