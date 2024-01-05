@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="b65e17e3-e056-4a1b-9b61-ed129114cba1" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/config.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/main/java/org/speer/server/SpeerApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/main/java/org/speer/server/SpeerConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/main/resources/banner.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/speer-core/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/speer-core/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/speer-core/src/main/java/org/speer/core/SpeerCoreBundle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/speer-core/src/main/java/org/speer/core/SpeerCoreConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/speer-core/src/main/java/org/speer/core/SpeerCoreModule.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/speer-core/src/main/java/org/speer/core/auth/SpeerAuthorizer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/speer-core/src/main/java/org/speer/core/auth/SpeerTokenManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/speer-core/src/main/java/org/speer/core/auth/TokenAuthenticator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/speer-core/src/main/java/org/speer/core/auth/UserAuthenticator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/speer-core/src/main/java/org/speer/core/db/NoteDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/speer-core/src/main/java/org/speer/core/db/UserDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/speer-core/src/main/java/org/speer/core/entities/Note.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/speer-core/src/main/java/org/speer/core/entities/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/speer-core/src/main/java/org/speer/core/models/AccessType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/speer-core/src/main/java/org/speer/core/models/GenericResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/speer-core/src/main/java/org/speer/core/resources/AuthResource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/speer-core/src/main/java/org/speer/core/resources/DummyResource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/speer-core/src/main/java/org/speer/core/resources/NoteResource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/speer-core/src/main/java/org/speer/core/service/NoteService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/speer-core/src/main/resources/banner.txt" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Enum" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
+  <component name="ProjectId" id="2aRzZoK60hFum7lYMbgZCNf07BR" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="false" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;corretto-17&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/diptayanbiswas/IdeaProjects/SpeerAssignment/speer-core/src/main/java/org/example/resources&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/speer-core/src/main/java/org/example/resources" />
+      <recent name="$PROJECT_DIR$/speer-core/src/main/java/org/example" />
+      <recent name="$PROJECT_DIR$/speer-core/src/main/java/org/example/db" />
+      <recent name="$PROJECT_DIR$/server/src/main/java/org/speer/server" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="org.speer" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="RunServer" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="org.speer.server.SpeerApplication" />
+      <module name="server" />
+      <option name="PROGRAM_PARAMETERS" value="server $PROJECT_DIR$/server/config.yml" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b65e17e3-e056-4a1b-9b61-ed129114cba1" name="Changes" comment="" />
+      <created>1704296240409</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1704296240409</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/speer-core/src/main/java/org/speer/core/resources/NoteResource.java</url>
+          <line>38</line>
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/speer-core/src/main/java/org/speer/core/service/NoteService.java</url>
+          <line>63</line>
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/speer-core/src/main/java/org/speer/core/service/NoteService.java</url>
+          <line>62</line>
+          <option name="timeStamp" value="23" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/speer-core/src/main/java/org/speer/core/resources/NoteResource.java</url>
+          <line>109</line>
+          <option name="timeStamp" value="24" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
