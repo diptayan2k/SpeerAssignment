@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="b65e17e3-e056-4a1b-9b61-ed129114cba1" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/speer-core/src/test/java/org/speer/core/service/NoteServiceImplTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/server/config.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/speer-core/src/main/java/org/speer/core/entities/Note.java" beforeDir="false" afterPath="$PROJECT_DIR$/speer-core/src/main/java/org/speer/core/entities/Note.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/speer-core/src/main/java/org/speer/core/entities/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/speer-core/src/main/java/org/speer/core/entities/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/speer-core/src/main/java/org/speer/core/resources/NoteResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/speer-core/src/main/java/org/speer/core/resources/NoteResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/speer-core/src/main/java/org/speer/core/service/NoteServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/speer-core/src/main/java/org/speer/core/service/NoteServiceImpl.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Enum" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
+  <component name="ProjectId" id="2aRzZoK60hFum7lYMbgZCNf07BR" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="false" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "master",
+    "jdk.selected.JAVA_MODULE": "corretto-17",
+    "last_opened_file_path": "/Users/diptayanbiswas/IdeaProjects/SpeerAssignment/speer-core/src/main/java/org/example/resources",
+    "project.structure.last.edited": "SDKs",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/speer-core/src/main/java/org/example/resources" />
+      <recent name="$PROJECT_DIR$/speer-core/src/main/java/org/example" />
+      <recent name="$PROJECT_DIR$/speer-core/src/main/java/org/example/db" />
+      <recent name="$PROJECT_DIR$/server/src/main/java/org/speer/server" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="org.speer" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.NoteServiceImplTest">
+    <configuration name="RunServer" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="org.speer.server.SpeerApplication" />
+      <module name="server" />
+      <option name="PROGRAM_PARAMETERS" value="server $PROJECT_DIR$/server/config.yml" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NoteServiceImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="speer-core" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.speer.core.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.speer.core.service" />
+      <option name="MAIN_CLASS_NAME" value="org.speer.core.service.NoteServiceImplTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NoteServiceImplTest.createNoteTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="speer-core" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.speer.core.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.speer.core.service" />
+      <option name="MAIN_CLASS_NAME" value="org.speer.core.service.NoteServiceImplTest" />
+      <option name="METHOD_NAME" value="createNoteTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NoteServiceImplTest.deleteNoteTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="speer-core" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.speer.core.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.speer.core.service" />
+      <option name="MAIN_CLASS_NAME" value="org.speer.core.service.NoteServiceImplTest" />
+      <option name="METHOD_NAME" value="deleteNoteTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NoteServiceImplTest.shareNoteTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="speer-core" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.speer.core.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.speer.core.service" />
+      <option name="MAIN_CLASS_NAME" value="org.speer.core.service.NoteServiceImplTest" />
+      <option name="METHOD_NAME" value="shareNoteTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NoteServiceImplTest.updateNoteTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="speer-core" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.speer.core.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.speer.core.service" />
+      <option name="MAIN_CLASS_NAME" value="org.speer.core.service.NoteServiceImplTest" />
+      <option name="METHOD_NAME" value="updateNoteTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.NoteServiceImplTest" />
+        <item itemvalue="JUnit.NoteServiceImplTest.deleteNoteTest" />
+        <item itemvalue="JUnit.NoteServiceImplTest.updateNoteTest" />
+        <item itemvalue="JUnit.NoteServiceImplTest.shareNoteTest" />
+        <item itemvalue="JUnit.NoteServiceImplTest.createNoteTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b65e17e3-e056-4a1b-9b61-ed129114cba1" name="Changes" comment="" />
+      <created>1704296240409</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1704296240409</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/speer-core/src/main/java/org/speer/core/service/NoteService.java</url>
+          <line>18</line>
+          <properties class="org.speer.core.service.NoteService" method="searchNotes">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/speer-core/src/main/java/org/speer/core/service/NoteServiceImpl.java</url>
+          <line>51</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/speer-core/src/test/java/org/speer/core/service/NoteServiceImplTest.java</url>
+          <line>143</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/speer-core/src/main/java/org/speer/core/service/NoteServiceImpl.java</url>
+          <line>55</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="org.speer.core.entities.User" memberName="notes" />
+        <PinnedItemInfo parentTag="org.speer.core.entities.User" memberName="password" />
+      </pinned-members>
+    </pin-to-top-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/SpeerAssignment$NoteServiceImplTest.ic" NAME="NoteServiceImplTest Coverage Results" MODIFIED="1704577492215" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>org.speer.core.service.*</FILTER>
+    </SUITE>
+  </component>
+</project>
