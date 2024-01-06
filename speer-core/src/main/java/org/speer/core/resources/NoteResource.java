@@ -37,6 +37,11 @@ public class NoteResource {
     @UnitOfWork
     public GenericResponse<List<Note>> getNotes(@Auth User user){
         try {
+            /**
+                Ideally this is not a good way to implement this,
+                but due to time crunch, implementing
+                like this.
+            **/
             RateLimiter.handleRateLimiting(user.getUsername());
             return GenericResponse
                     .<List<Note>>builder()
@@ -181,7 +186,7 @@ public class NoteResource {
     @ResponseMetered
     @UnitOfWork
     @Path("/search")
-    public GenericResponse<List<Note> > getNotes(@QueryParam("query") String query ,@Auth User user){
+    public GenericResponse<List<Note> > searchNotes(@QueryParam("query") String query ,@Auth User user){
         try {
             RateLimiter.handleRateLimiting(user.getUsername());
             return GenericResponse

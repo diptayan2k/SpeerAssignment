@@ -1,9 +1,7 @@
 package org.speer.core.entities;
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 import java.security.Principal;
 import java.util.List;
@@ -11,8 +9,10 @@ import java.util.Set;
 
 @Entity
 @Data
+@Builder
 @NoArgsConstructor
 @AllArgsConstructor
+@EqualsAndHashCode
 @Table(name = "users")
 @NamedQueries({
         @NamedQuery(name = "User.findByUsername", query = "SELECT u FROM User u WHERE u.username = :username")

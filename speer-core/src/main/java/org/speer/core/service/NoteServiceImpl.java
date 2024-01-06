@@ -38,7 +38,6 @@ public class NoteServiceImpl implements NoteService {
         }catch (Exception e){
             throw new RuntimeException(e.getMessage());
         }
-
     }
 
     @Override
@@ -94,7 +93,6 @@ public class NoteServiceImpl implements NoteService {
                 .stream()
                 .filter(note-> note.getTitle().contains(query) || note.getContent().contains(query))
                 .collect(Collectors.toList());
-
     }
 
 
